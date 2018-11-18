@@ -41,6 +41,7 @@ namespace chainbase {
          if(!write) BOOST_THROW_EXCEPTION( std::runtime_error( "database file not found at " + dir.native() ) );
       }
 
+      std::cout<<"++++++data dir: "<<dir<<std::endl;
       bfs::create_directories(dir);
 
       _data_dir = dir;
